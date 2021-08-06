@@ -31,3 +31,26 @@ if(playerInput == '1'){
     playerMove = 'nożyce';
 
 printMessage('Twój ruch to: ' + playerMove);
+
+// WYNIK GRY
+
+if(computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('WYGRAŁEŚ!');
+  } else if(computerMove == 'papier' && playerMove == 'nożyce') {
+    printMessage('WYGRAŁEŚ!');
+  } else if(computerMove == 'nożyce' && playerMove == 'kamień') {
+    printMessage('WYGRAŁEŚ!');
+  } else if(computerMove == "papier" && playerMove == 'kamień') {
+    printMessage('PRZEGRAŁEŚ!');
+  } else if(computerMove == 'nożyce' && playerMove == 'papier') {
+    printMessage('PRZEGRAŁEŚ!');
+  } else if(computerMove == 'kamień' && playerMove == 'nożyce') {
+    printMessage('PRZEGRAŁEŚ!');
+  } else if(computerMove == 'kamień' && playerMove == 'kamień') {
+    printMessage('REMIS!');
+  } else if(computerMove == 'papier' && playerMove == 'papier') {
+    printMessage('REMIS!');
+  } else if(computerMove == 'nożyce' && playerMove == 'nożyce') {
+    printMessage('REMIS!');
+  } else (playerMove == 'nieznany ruch')
+    printMessage('Proszę podaj wartość 1 - 3')
