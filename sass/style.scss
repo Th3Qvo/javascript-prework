@@ -1,0 +1,55 @@
+
+/* GLOBAL */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* GAME FIELD */ 
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 2rem auto;
+    padding: 1rem;
+    #buttons {
+        width: 70%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 2rem;
+        flex-grow: 1;
+        [id^="play-"] {
+            padding: 2rem;
+            font-weight: bold;
+            letter-spacing: 2;
+        }
+    }
+    #messages {
+        margin: 4rem;
+        padding: 2rem;
+        width: 70%;
+        height: auto;
+        flex-grow: 2;
+        text-align: center;
+        font-size: 3rem;
+        :nth-child(3){
+            font-size: 5rem;
+            font-weight: bold;
+            color: orangered;
+            padding-top: 2rem;
+        }
+    }
+}

@@ -14,15 +14,11 @@ function playGame(playerInput){
         }
     }
     let randomNumber = Math.floor(Math.random() * 3 + 1);
-    console.log('Ruch komputera: ' + randomNumber);
     let computerMove = getMoveName(randomNumber);
     printMessage('Ruch komputera: ' + computerMove);
-    console.log('Ruch gracza: ' + playerInput);
     let playerMove = getMoveName(playerInput);
     printMessage('Ruch gracza: ' + playerMove);
     function displayResult(argComputerMove, argPlayerMove){
-        console.log('wywyłano displayResult');
-        console.log('argumenty: ' + argComputerMove + ' ' + argPlayerMove);
         if(argComputerMove == 'kamień' && argPlayerMove == 'papier') {
             return ('Wygrałeś!');
         } else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
