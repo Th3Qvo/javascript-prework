@@ -10,9 +10,9 @@ function getMoveName(argMoveId){
     printMessage('Nie znam ruchu o id ' + argMoveId + '.');
     return 'nieznany ruch';
     }
-  }
+}
 
-// RUCH KOMPUTERA
+// RUCH KOMPUTERA_____________________________________________________________________________________________________________________________________________________
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -31,7 +31,7 @@ if(randomNumber == 1) {
 
 printMessage('Ruch komputera: ' + computerMove);
 
-// RUCH GRACZA
+// RUCH GRACZA________________________________________________________________________________________________________________________________________________________
 
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
@@ -52,7 +52,7 @@ printMessage('Twój ruch to: ' + playerMove);
 
 printMessage('Ruch gracza: ' + playerMove);
 
-// WYNIK GRY
+// WYNIK GRY__________________________________________________________________________________________________________________________________________________________
 
 /*
 if(computerMove == 'kamień' && playerMove == 'papier'){
@@ -96,3 +96,6 @@ function displayResult(argComputerMove, argPlayerMove){
 }
 
 printMessage(displayResult(computerMove, playerMove));
+
+// INTERFEJS GRY______________________________________________________________________________________________________________________________________________________
+
